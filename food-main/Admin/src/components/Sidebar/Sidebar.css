@@ -1,0 +1,72 @@
+.sidebar {
+    width: 250px;                          /* Set a fixed width for the sidebar */
+    height: 100vh;                         /* Full height of the viewport */
+    background-color: #ffffff;             /* White background color for the sidebar */
+    color: #333;                           /* Dark text color for contrast */
+    display: flex;                         /* Use Flexbox for layout */
+    flex-direction: column;                /* Stack items vertically */
+    padding: 20px;                         /* Add padding inside the sidebar */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow effect for depth */
+    border: 1px solid #ddd;                /* Border around the sidebar */
+    border-radius: 8px;                    /* Optional: rounded corners */
+}
+
+.sidebar-option {
+    display: flex;                         /* Use Flexbox for sidebar options */
+    align-items: center;                   /* Center items vertically */
+    padding: 15px;                        /* Padding for each option */
+    cursor: pointer;                      /* Change cursor to pointer on hover */
+    transition: background-color 0.3s;    /* Smooth background transition */
+    background-color: #f9f9f9;            /* Light background for each option */
+    border: 1px solid #ddd;                /* Border around each option */
+    border-radius: 4px;                    /* Rounded corners for options */
+    margin-bottom: 10px;                   /* Space between options */
+}
+
+.sidebar-option:hover {
+    background-color: #f0f0f0;            /* Change background color on hover */
+}
+
+.sidebar-option img {
+    width: 24px;                          /* Set a fixed width for icons */
+    height: 24px;                         /* Set a fixed height for icons */
+    margin-right: 10px;                   /* Space between icon and text */
+}
+
+.sidebar-option p {
+    margin: 0;                            /* Remove default margin for paragraphs */
+    font-size: 16px;                      /* Font size for option text */
+}
+.sidebar-option.active{
+    background-color: #ffffff;
+    border-color: red;
+}
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;                      /* Reduce sidebar width on smaller screens */
+        padding: 15px;                    /* Adjust padding */
+    }
+
+    .sidebar-option {
+        padding: 10px;                   /* Reduce padding for sidebar options */
+        font-size: 14px;                 /* Decrease font size for better fit */
+    }
+
+    .sidebar-option img {
+        width: 20px;                     /* Reduce icon size */
+        height: 20px;                    /* Reduce icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;                     /* Full width on extra small screens */
+        height: auto;                    /* Adjust height for better usability */
+    }
+
+    .sidebar-option {
+        padding: 8px;                   /* Further reduce padding for options */
+        font-size: 12px;                /* Further decrease font size */
+    }
+}

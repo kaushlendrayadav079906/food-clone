@@ -1,0 +1,66 @@
+/* General Styles */
+.add {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Maximum width for the form */
+    margin-left: 0; /* Align to the left */
+    margin-right: auto; /* Ensure it doesn't center */
+}
+
+/* Flexbox Styles */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+}
+
+/* Upload Image Section */
+.add-img-upload {
+    margin-bottom: 20px;
+}
+
+/* Upload Image Styles */
+.add-img-upload label {
+    cursor: pointer; /* Pointer cursor for upload area */
+}
+
+.add-img-upload img {
+    width: 100%; /* Responsive image */
+    max-width: 200px; /* Limit image size */
+    border: 1px dashed #ddd; /* Dashed border for upload area */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Input Fields */
+input[type="text"],
+textarea,
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px; /* Consistent font size */
+    margin-bottom: 15px; /* Space below each input */
+    transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .add {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .add-img-upload img {
+        max-width: 150px; /* Adjust image size for smaller screens */
+    }
+}

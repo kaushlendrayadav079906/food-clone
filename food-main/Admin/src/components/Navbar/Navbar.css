@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;            /* Use Flexbox layout */
+    justify-content: space-between; /* Space out items */
+    align-items: center;     /* Center items vertically */
+    padding: 10px 20px;     /* Add some padding */
+    background-color: #f8f8f8; /* Optional: background color */
+}
+
+.logo {
+    height: 40px;           /* Adjust logo size as needed */
+}
+
+.profile {
+    height: 40px;          /* Adjust profile icon size as needed */
+    border-radius: 50%;    /* Optional: make the profile image round */
+}
